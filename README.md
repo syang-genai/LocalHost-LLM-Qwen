@@ -13,7 +13,7 @@ Setup Enviroment
 
 Serve LLM Model
 ---
-uv run vllm serve "/root/project_name/Qwen-0.6B" --port 8000 --enable-reasoning --reasoning-parser deepseek_r1  
+uv run vllm serve /root/Qwen/Qwen3-0.6B --port 8000 --enable-auto-tool-choice --tool-call-parser hermes --reasoning-parser qwen3 
 
 Test LLM Model Server
 ---

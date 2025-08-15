@@ -1,7 +1,7 @@
 from huggingface_hub import snapshot_download
 snapshot_download(
     repo_id="Qwen/Qwen3-0.6B",  # replace with Qwen3-0.6B if available
-    local_dir="/root/Qwen/Qwen/Qwen3-0.6B",  # your desired directory
+    local_dir="/root/Qwen/Qwen3-0.6B",  # your desired directory
     local_dir_use_symlinks=False       # optional: avoid symlinks
 )
 
@@ -9,7 +9,7 @@ snapshot_download(
 
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-model_name = "/root/Qwen/Qwen/Qwen3-0.6B"
+model_name = "/root/Qwen/Qwen3-0.6B"
 
 # load the tokenizer and the model
 tokenizer = AutoTokenizer.from_pretrained(model_name)
